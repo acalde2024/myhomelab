@@ -25,3 +25,5 @@ packer_cache/
 **/.aspnet/
 
 **/config/
+**/etc-pihole/
+**/etc-dnsmasq.d/
