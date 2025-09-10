@@ -32,3 +32,27 @@ secrets/*
 
 #GitHub Actions temp files
 *.retry
+
+.vscode/**
+.obsidian
+.obsidian/**
+.DS_Store
+
+**/.envrc
+**/.env
+
+**/.terraform
+**/.terraform.lock.hcl
+**/.terraform.tfstate.*
+**/terraform.tfstate
+**/terraform.tfstate.backup
+**/*.auto.tfvars
+
+**/*.auto.pkrvars.hcl
+packer-*.log
+packer_cache/
+*.iso
+*.box
+*.ova
+
+**/helm-credentials.yaml
