@@ -1,0 +1,11 @@
+#Ignore enviroment files 
+.env
+*/.env
+*.env
+
+#Ignore docker secerets folder
+*/secerets/*
+
+#Ignore temp files 
+*.log
+*.tmp
