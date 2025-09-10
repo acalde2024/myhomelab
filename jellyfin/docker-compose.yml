@@ -1,7 +1,7 @@
 ---
 services:
   jellyfin:
-    image: jellyfin/jellyfin:latest 
+    image: ghcr.io/jellyfin/jellyfin:latest
     container_name: jellyfin
     environment:
       - PUID=${PUID}
@@ -10,7 +10,7 @@ services:
     volumes:
       - ./config:/config
       - ./cache:/cache
-      - /mnt/media:/media:ro
+      - ./media:/media:ro
     ports:
       - 8096:8096
     restart: unless-stopped
