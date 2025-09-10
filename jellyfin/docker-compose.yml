@@ -16,6 +16,4 @@ services:
     restart: unless-stopped
 
 volumes:
-  config:
-  cache:
-  media:
+  jellyfin:
