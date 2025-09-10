@@ -23,3 +23,5 @@ packer_cache/
 **/helm-credentials.yaml
 
 **/.aspnet/
+
+**/.config/
