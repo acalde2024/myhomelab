@@ -10,7 +10,7 @@ services:
     volumes:
       - ./config:/config
       - ./cache:/cache
-      - ./media:/media:ro
+      - /mnt/media:/media:ro
     ports:
       - 8096:8096
     restart: unless-stopped
