@@ -21,3 +21,5 @@ packer_cache/
 *.ova
 
 **/helm-credentials.yaml
+
+**/.aspnet/
