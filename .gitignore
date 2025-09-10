@@ -1,13 +1,34 @@
-#Ignore enviroment files 
-.env
-*/.env
-*.env
+#General 
 
-#Ignore docker secerets folder
-*/secerets/*
-
-#Ignore temp files 
 *.log
 *.tmp
+*.swp
+*.bak
+*.old
 
-*.aspnet/
+#OS/System files
+.DS_Store
+Thumbs.db
+
+#Docker Compose & Secrets 
+.env
+*.env
+*/.env
+*/secrets/*
+secrets/*
+.envrc
+
+#Ignore Docker volume mounts
+**/data/
+**/config/
+**/cache/
+**/etc-pihole/
+**/etc-dnsmasq.d/
+
+#IDE / Editor files
+.vscode/
+.idea/
+*iml
+
+#GitHub Actions temp files
+*.retry
