@@ -9,3 +9,5 @@
 #Ignore temp files 
 *.log
 *.tmp
+
+*.aspnet/
