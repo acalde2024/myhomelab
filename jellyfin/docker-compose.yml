@@ -14,8 +14,3 @@ services:
     ports:
       - 8096:8096
     restart: unless-stopped
-
-volumes:
-  jellyfin_config:
-  jellyfin_cache:
-  jellyfin_media:
