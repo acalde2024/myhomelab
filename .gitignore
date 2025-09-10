@@ -24,4 +24,4 @@ packer_cache/
 
 **/.aspnet/
 
-**/.config/
+**/config/
