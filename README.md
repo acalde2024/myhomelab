@@ -7,6 +7,7 @@ This is a repo documenting and showcasing my new HomeLab journey. I started this
   <li>Docker</li>
   <li>Terraform</li>
   <li>GitHub</li>
+</ul>
 
 # End goal
 <ul>
