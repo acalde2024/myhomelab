@@ -1,9 +1,10 @@
 services:
   jellyfin:
     image: jellyfin/jellyfin
-    user: 
-      - "${uid}:${gid}"
     network_mode: 'host'
+    ports:
+      - 8096:8096
+    container_name: jellyfin
     restart: 'unless-stopped'
     environment:
       - JELLYFIN_CACHE_DIR=/var/cache/jellyfin
@@ -16,5 +17,5 @@ services:
       - /var/lib/jellyfin:/var/lib/jellyfin
       - /var/log/jellyfin:/var/log/jellyfin
       - /usr/share/jellyfin/web:/usr/share/jellyfin/web
-      - /mnt/media/movies:movies:ro
-      - /mnt/media/tvshows:tvshows:ro
+      - /mnt/media/movies:/movies:ro
+      - /mnt/media/tvseries:/tvshows:ro
