@@ -16,5 +16,6 @@ services:
       - /var/cache/jellyfin:/var/cache/jellyfin
       - /var/lib/jellyfin:/var/lib/jellyfin
       - /var/log/jellyfin:/var/log/jellyfin
+      - /usr/share/jellyfin/web:/usr/share/jellyfin/web
       - /mnt/media/movies:movies:ro
       - /mnt/media/tvshows:tvshows:ro
