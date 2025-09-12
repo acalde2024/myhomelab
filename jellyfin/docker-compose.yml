@@ -13,13 +13,8 @@ services:
       - JELLYFIN_LOG_DIR=/var/log/jellyfin
     volumes:
       - /etc/jellyfin:/etc/jellyfin
-      - cache:/var/cache/jellyfin
-      - lib:/var/lib/jellyfin
-      - log/var/log/jellyfin
+      - /var/cache/jellyfin:/var/cache/jellyfin
+      - /var/lib/jellyfin:/var/lib/jellyfin
+      - /var/log/jellyfin:/var/log/jellyfin
       - /mnt/media/movies:movies:ro
       - /mnt/media/tvshows:tvshows:ro
-
-volumes:
-  cache:
-  lib:
-  log:
