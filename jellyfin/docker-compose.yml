@@ -3,7 +3,6 @@ services:
     image: jellyfin/jellyfin
     user: 
       - "${uid}:${gid}"
-    container_name: jellyfin
     network_mode: 'host'
     restart: 'unless-stopped'
     environment:
