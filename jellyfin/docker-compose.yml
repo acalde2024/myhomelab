@@ -1,7 +1,7 @@
 services:
   jellyfin:
     image: jellyfin/jellyfin
-    network:
+    networks:
       - frontend
     ports:
       - 8096:8096
@@ -21,6 +21,6 @@ services:
       - /mnt/media/movies:/movies:ro
       - /mnt/media/tvseries:/tvshows:ro
 
-networks:
+networkss:
   frontend:
     driver: brdige
