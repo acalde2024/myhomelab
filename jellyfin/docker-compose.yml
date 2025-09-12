@@ -1,7 +1,8 @@
 services:
   jellyfin:
     image: jellyfin/jellyfin
-    network_mode: 'host'
+    network:
+      - frontend
     ports:
       - 8096:8096
     container_name: jellyfin
@@ -19,3 +20,7 @@ services:
       - /usr/share/jellyfin/web:/usr/share/jellyfin/web
       - /mnt/media/movies:/movies:ro
       - /mnt/media/tvseries:/tvshows:ro
+
+networks:
+  frontend:
+    driver: brdige
