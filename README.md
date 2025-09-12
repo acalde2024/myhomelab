@@ -17,3 +17,6 @@ This is a repo documenting and showcasing my new HomeLab journey. I started this
   <li>Understand CI/CD, Version Control and Automation</li>
   <li>Gain valuable skills for a Cloud Engineer/DevOps career</li>
 </ul>
+
+# Diagram
+<img alt = "Server Architect" src = "ServerDiagram.png" width="600px">
