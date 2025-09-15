@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  bind9:
+    contianer_name: dns-server
+    image: ubuntu/bind9:latest
+    environment:
+      - BIND9_USER=root
+      - TZ=America/Chicago
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+    volumes:
+      - ./config:/etc/bind
+      - ./cache:/var/cache/bind
+      - ./records:/var/lib/bind
+    restart: unless-stopped
+    networks:
+      - frontend
+
+networks:
+  frontend:
+    driver: bridge
