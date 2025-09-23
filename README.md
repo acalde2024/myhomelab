@@ -11,6 +11,7 @@ This is a repo documenting and showcasing my new HomeLab journey. I started this
   <li>Running Twingate on server to create a tunnel to connect remotely from anywhere</li>
   <li>Using NPM as my Proxy Manager that only allows connection from within LAN or from Twingate by configuring ACL security groups, pointing to Proxy Endpoint and Twingate Public IP</li>
   <li>On server created a cronjob to update server every sunday at midnight and send an email confirming it has been updated with logs. Plans on changing the frequent to every other day to handle security updates</li>
+  <li>Running portainer to better visualize and manager containers</li>
 </ul>
 
 # Future Plans
