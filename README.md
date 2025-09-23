@@ -19,4 +19,4 @@ This is a repo documenting and showcasing my new HomeLab journey. I started this
 </ul>
 
 # Diagram
-<img alt = "Server Architect" src = "ServerDiagram.png" width="600px">
+<img alt = "Server Architect" src = "server_topology.png" width="600px">
