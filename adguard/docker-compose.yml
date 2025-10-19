@@ -6,13 +6,18 @@ services:
     ports:
       - 53:53/tcp
       - 53:53/udp
-      - 80:80/tcp
+      - 82:80/tcp
       - 3000:3000/tcp
     volumes:
       - config:/opt/adguardhome/conf
       - work:/opt/adguardhome/work
+    networks:
+      - frontend
     restart: unless-stopped
 
 volumes:
   config:
   work:
+networks:
+  frontend:
+    external: true
