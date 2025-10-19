@@ -6,20 +6,24 @@ This is a repo documenting and showcasing my new HomeLab journey. I started this
 
 <ul>
   <li>Migrated my media server from OS install to Container using docker compose and successful on mapping current drives to container.</li>
-  <li>Started a Proxy Manager Container to handle my local domain routing using combination of PiHole for local DNS and Proxy Manger for future Publicly signed SSL</li>
-  <li>PiHole running on OS vs container to act as a network adblocker and act as my recursive DNS lookup but have plans to migrate to docker container</li>
+  <li>Running AdGuard as my Network Wide add blocker and Malicious filtering to better proctect home network.</li>
   <li>Running Twingate on server to create a tunnel to connect remotely from anywhere</li>
-  <li>Using NPM as my Proxy Manager that only allows connection from within LAN or from Twingate by configuring ACL security groups, pointing to Proxy Endpoint and Twingate Public IP</li>
+  <li>Using NPM as my Proxy Manager that only allows connection from within LAN or from Twingate by configuring ACL security groups, pointing to Proxy Endpoint and Twingate Public IP and serve my SSL certificats</li>
   <li>On server created a cronjob to update server every sunday at midnight and send an email confirming it has been updated with logs. Plans on changing the frequent to every other day to handle security updates</li>
   <li>Running portainer to better visualize and manager containers</li>
+  <li>Running a new web app monitor uptime kuma with notifications making sure my services are up and running and notifiy me if it goes down</li>
+  <li>Running a dedicated homepage site to have my entire homelab apps in one pane for ease of access</li>
 </ul>
 
 # Future Plans
 
 <ul>
   <li>Deploy a self hosted password manager, to better handle logins locally</li>
-  <li>Set up a monitoring tool to track statistics of my server making sure it's always healthy and up</li>
-  <li>Add additional server host to migrate my media server, add a homepage, as well run newer service to keep my RasberryPI as a VPN, Monitoring and DNS server</li>
+  <li>Set up Grafana + Promethus for monitoring and logging my services</li>
+  <li>Work and build a brand new server and add 2TB HDD to act as my main server to cluster a Docker swarm for orchestration and availability of my apps</li>
+  <li>Host a Container image watchtower in which goal is to always have the latest container image with least hands on configuration</li>
+  <li>Start implementaing a backup solution to back up both my servers and implement tools like ansible to automate configuration management</li>
+  <li>Learn how to utilize CICD pipeline to automate my deployment of Web services</li>
 
 # Tools experience
 <ul>
@@ -36,6 +40,3 @@ This is a repo documenting and showcasing my new HomeLab journey. I started this
   <li>Understand CI/CD, Version Control and Automation</li>
   <li>Gain valuable skills for a Cloud Engineer/DevOps career</li>
 </ul>
-
-# Diagram
-<img alt = "Server Architect" src = "server_topology.png" width="600px">
