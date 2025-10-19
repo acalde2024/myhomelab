@@ -22,7 +22,7 @@ This is a repo documenting and showcasing my new HomeLab journey. I started this
   <li>Set up Grafana + Promethus for monitoring and logging my services</li>
   <li>Work and build a brand new server and add 2TB HDD to act as my main server to cluster a Docker swarm for orchestration and availability of my apps</li>
   <li>Host a Container image watchtower in which goal is to always have the latest container image with least hands on configuration</li>
-  <li>Start implementaing a backup solution to back up both my servers and implement tools like ansible to automate configuration management</li>
+  <li>Start implementaing a backup solution to back up both my servers and implement tools like ansible to automate configuration management in the event of recovery</li>
   <li>Learn how to utilize CICD pipeline to automate my deployment of Web services</li>
 
 # Tools experience
