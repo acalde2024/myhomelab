@@ -6,7 +6,7 @@ This is a repo documenting and showcasing my new HomeLab journey. I started this
 
 <ul>
   <li>Migrated my media server from OS install to Container using docker compose and successful on mapping current drives to container.</li>
-  <li>Running AdGuard as my Network Wide add blocker and Malicious filtering to better proctect home network.</li>
+  <li>Running AdGuard as my Network Wide add blocker and Malicious filtering to better protect home network.</li>
   <li>Running Twingate on server to create a tunnel to connect remotely from anywhere</li>
   <li>Using NPM as my Proxy Manager that only allows connection from within LAN or from Twingate by configuring ACL security groups, pointing to Proxy Endpoint and Twingate Public IP and serve my SSL certificats</li>
   <li>On server created a cronjob to update server every sunday at midnight and send an email confirming it has been updated with logs. Plans on changing the frequent to every other day to handle security updates</li>
