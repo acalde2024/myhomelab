@@ -27,3 +27,5 @@ packer_cache/
 **/config/
 **/etc-pihole/
 **/etc-dnsmasq.d/
+
+**/.cfg/
