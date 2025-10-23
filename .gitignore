@@ -28,4 +28,4 @@ packer_cache/
 **/etc-pihole/
 **/etc-dnsmasq.d/
 
-**/.cfg/
+**/.cfg
