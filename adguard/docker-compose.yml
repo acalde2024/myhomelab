@@ -1,0 +1,23 @@
+name: adguard
+
+services:
+  adguard:
+    image: adguard/adguardhome:latest
+    ports:
+      - 53:53/tcp
+      - 53:53/udp
+      - 82:80/tcp
+      - 3000:3000/tcp
+    volumes:
+      - config:/opt/adguardhome/conf
+      - work:/opt/adguardhome/work
+    networks:
+      - frontend
+    restart: unless-stopped
+
+volumes:
+  config:
+  work:
+networks:
+  frontend:
+    external: true
