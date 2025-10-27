@@ -2,7 +2,7 @@ services:
   jellyfin:
     image: jellyfin/jellyfin
     networks:
-      - web-server
+      - proxy
     ports:
       - 8096:8096
     container_name: jellyfin
@@ -19,5 +19,5 @@ services:
     restart: unless-stopped
 
 networks:
-  web-server:
+  proxy:
     external: true
