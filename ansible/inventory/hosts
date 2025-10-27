@@ -1,9 +1,9 @@
 [servers]
-192.168.68.105
-192.168.68.110
+paris.homelab.ac
+temple.homelab.ac
 
 [paris]
-192.168.68.105
+paris.homelab.ac
 
 [temple]
-192.168.68.110
+temple.homelab.ac

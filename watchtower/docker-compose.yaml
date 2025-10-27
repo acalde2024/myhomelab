@@ -1,0 +1,27 @@
+version: "3"
+services:
+  watchtower:
+    image: containrrr/watchtower
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    restart: unless-stopped
+    networks:
+      - backend
+    ports:
+      - 8003:8080
+    envrionment:
+      - TZ: America/Chicago
+      - WATCHTOWER_CLEANUP: true
+      - WATCHTOWER_DISABLE_CONTAINERS: adguardhome
+      - WATCHTOWER_INCLUDE_RESTARTING: true
+      - WATCHTOWER_ROLLING_RESTART: true
+      - WATCHTOWER_SCHEDULE: 0 1 * * *
+      - WATCHTOWER_NOTIFICATION: shoutrrr
+      - WATCHTOWER_NOTIFICATION_SHOUTRRR_URL: ${WATCHTOWER_NOTIFICATION_SHOUTRRR_URL}
+      - WATCHTOWER_NOTIFCATION_TITLE: Watchtower Notification
+      - WATCHTOWER_NOTIFCATION_MESSAGE: Container {{.Name}} was updated to {{.Image}}
+      - WATCHTOWER_NOTIFCATION_INTERVAL: 3600 
+
+networks:
+  backend:
+    external: true
