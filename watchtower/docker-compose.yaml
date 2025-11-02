@@ -6,18 +6,18 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     restart: unless-stopped
     networks:
-      - backend
+      - watchtower
     ports:
       - 8003:8080
     envrionment:
       TZ: America/Chicago
-      WATCHTOWER_MONITOR_ONLY: 'true'
-      WATCHTOWER_NOTIFICATIONS: email
+      WATCHTOWER_NOTIFICATION_EMAIL_SERVER: ${EMAIL_SERVER}
+      WATCHTOWER_NOTIFICATION_EMAIL_SERVER_PORT: 587
+      WATCHTOWER_NOTIFICATION_EMAIL_USER: ${EMAIL_USER}
+      WATCHTOWER_NOTIFICATION_EMAIL_PASSWORD: ${EMAIL_PASSWORD}
       WATCHTOWER_NOTIFICATION_EMAIL_FROM: ${EMAIL_FROM}
       WATCHTOWER_NOTIFICATION_EMAIL_TO: ${EMAIL_TO}
-      WATCHTOWER_NOTIFICATION_EMAIL_SERVER: ${SMTP_SERVER}
-      WATCHTOWER_NOTIFICATION_EMAIL_SERVER_PORT: 587
-      WATCHTOWER_NOTIFICATION_EMAIL_DELAY: 2
+
 networks:
-  backend:
-    external: true
+  watchtower:
+    extenal: true
