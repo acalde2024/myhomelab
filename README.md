@@ -24,6 +24,8 @@ This is a repo documenting and showcasing my new HomeLab journey. I started this
   <li>Work and build a brand new NAS Server to host my Media Server and other file sharing services</li>
   <li>Start implementaing a backup solution to back up both my servers and implement tools like ansible to automate configuration management in the event of recovery</li>
   <li>Learn how to utilize CICD pipeline to automate my deployment of Web services</li>
+  <li>Implement a Sub and Pub model to push server notifiations as SMS to monitory server's performance</li>
+  <li>Find a new replacement for my Proxy manager to a more enterprise grade to handle better SSL certs, authentication of my services, etc..</li>
 
 # Tools experience
 <ul>
