@@ -1,17 +1,17 @@
 services:
   uptime-kuma:
-    image: louislam/uptime-kuma:latest
+    image: louislam/uptime-kuma:2.0.2
     container_name: uptime-kuma
     networks:
-      - backend
+      - monitor
     ports:
       - 3001:3001
     volumes:
       - ./data:/app/data
+      - /var/run/docker.sock:/var/run/docker.sock
     restart: unless-stopped
     security_opt:
       - no-new-privileges:true
-
 networks:
-  backend:
+  monitor:
     external: true
