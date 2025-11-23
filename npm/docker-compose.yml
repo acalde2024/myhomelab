@@ -1,12 +1,14 @@
 services:
   app:
-    image: 'jc21/nginx-proxy-manager:latest'
+    image: 'jc21/nginx-proxy-manager:2.13.0'
     restart: unless-stopped
     ports:
       - '80:80' # Public HTTP Port
       - '443:443' # Public HTTPS Port
       - '81:81' # Admin Web Port
-
+    dns:
+      - 1.1.1.1
+      - 8.8.8.8
     volumes:
       - ./data:/data
       - ./letsencrypt:/etc/letsencrypt
@@ -14,4 +16,4 @@ services:
       - proxy
 networks:
   proxy:
-    driver: bridge
+    external: true
