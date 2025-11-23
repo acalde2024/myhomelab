@@ -1,6 +1,6 @@
 services:
   jellyfin:
-    image: jellyfin/jellyfin
+    image: jellyfin/jellyfin:latest
     networks:
       - proxy
     ports:
@@ -12,14 +12,14 @@ services:
       - TZ=America/Chicago
     volumes:
       - ./config:/config
-      - tvshows:/data/tvshows:ro
-      - /home/acal/media/Movies:/data/movies:ro
-    port:
-      - 8096:8096
+      - /home/acal/media/tvshows:/tvshows
+      - /home/acal/media/Movies:/movies
     restart: unless-stopped
     dns:
       - 8.8.8.8
       - 1.1.1.1
+    security_opt:
+      - no-new-privileges:true
 
 networks:
   proxy:
