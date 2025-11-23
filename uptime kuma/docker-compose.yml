@@ -3,7 +3,7 @@ services:
     image: louislam/uptime-kuma:latest
     container_name: uptime-kuma
     networks:
-      - backend
+      - monitor
     ports:
       - 3001:3001
     volumes:
@@ -13,5 +13,5 @@ services:
       - no-new-privileges:true
 
 networks:
-  backend:
+  monitor:
     external: true

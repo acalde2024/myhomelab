@@ -29,3 +29,8 @@ packer_cache/
 **/etc-dnsmasq.d/
 
 **/.cfg
+
+npm/letsencrypt/
+portainer/portainer_data/
+
+appdata/

@@ -1,0 +1,16 @@
+services:
+  portainer:
+    container_name: portainer
+    image: portainer/portainer-ce:2.20.2
+    restart: always
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./portainer_data:/data
+    ports:
+      - 9443:9443
+    networks:
+      - monitor
+
+networks:
+  monitor:
+    external: true
