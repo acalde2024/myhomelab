@@ -13,7 +13,7 @@ This is a repo documenting and showcasing my new HomeLab journey. I started this
   <dt>Dell Inspiron 15</dt>
   <dd>- 500GB SSD</dd>
   <dd>- 4GB RAM</dd>
-  <dd>Ubuntu server</dd>
+  <dd>- Ubuntu server</dd>
   
   <dt>RasberryPI 2</dt>
   <dd>- 64 GB microSD</dd>
