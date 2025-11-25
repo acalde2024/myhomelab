@@ -43,11 +43,16 @@ This is a repo documenting and showcasing my new HomeLab journey. I started this
   <li>Start implementaing a backup solution to back up both my servers and implement tools like ansible to automate configuration management in the event of recovery</li>
   <li>Learn how to utilize CICD pipeline to automate my deployment of Web services</li>
   <li>Implement a Sub and Pub model to push server notifiations as SMS to monitory server's performance</li>
+  <li>Impletment a watchtower service that updates and notifies me when new docker images are out</li>
 </ul>
 
 # What I learned so far
 
-<p>So what did I learned after all of this? I learned the importance on having backups. I already brought down my service multiple times in which I had no backup on restoring. So the importance on having a 3-2-1 backup strategy in which is my next project. I also learned how containers really work under the hood. For example, my services are running in different docker network to avoid communications between containers that should not be communicating. Learned how to find solutions to automate my set up by leveraging Ansible to deploy my configurations, using GitHub to control Source Versioning and use of cron jobs to automate backups, updates, and server maintance.</p>
+<p>So what did I learned after all of this? I learned the importance on having backups. I already brought down my service multiple times in which I had no backup on restoring. So the importance on having a 3-2-1 backup strategy in which is my next project. I also learned how containers really work under the hood. For example, my services are running in different docker network to avoid communications between containers that should not be communicating. Learned how to find solutions to automate my set up by leveraging Ansible to deploy my configurations, using GitHub to control Source Versioning and use of cron jobs to automate backups, updates, and server maintance.<br>
+
+I also learned most of times the simpler the better when it comes down to putting the building blocks together on how systems work behind the scene.
+
+</p>
 
 # End goal
 <ul>
