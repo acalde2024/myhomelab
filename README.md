@@ -44,4 +44,4 @@ This is a repo documenting and showcasing my new HomeLab journey. I started this
 </ul>
 
 #Server Diagram
- <img src="server Diagram.png" alt="server" width="500" height="600"> 
+<img width="1558" height="855" alt="Image" src="https://github.com/user-attachments/assets/3862c248-9da3-4362-be64-1f0155d46988" />
