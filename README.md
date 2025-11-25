@@ -11,14 +11,12 @@ This is a repo documenting and showcasing my new HomeLab journey. I started this
 
 <ul>
   <li>Migrated my media server from OS install to Container using docker compose and successful on mapping current drives to container.</li>
-  <li>Running AdGuard as my Network Wide add blocker and Malicious filtering to better protect home network.</li>
-  <li>Running Twingate on server to create a tunnel to connect remotely from anywhere</li>
-  <li>Using NPM as my Proxy Manager that only allows connection from within LAN or from Twingate by configuring ACL security groups, pointing to Proxy Endpoint and Twingate Public IP and serve my SSL certificates</li>
+  <li>Running my RasberryPi as my DNS and Twingateto allow remote connection to my media server and handle local DNS resolution</li>
   <li>On server created a cronjob to update server every day at 7pm and send an email confirming it has been updated with logs. Plans on changing the frequent to every other day to handle security updates</li>
   <li>Running portainer to better visualize and manager containers</li>
   <li>Running a new web app monitor uptime kuma with notifications making sure my services are up and running and notifiy me if it goes down</li>
   <li>Running a dedicated homepage site to have my entire homelab apps in one pane for ease of access</li>
-  <li>Running and added Watchtower to mantain and update container images to streamline and automate image updates</li>
+  <li>Running and added Watchtower to mantain and update container images to streamline and automate image updates. However will replace Watchtower since it hasn't been updated for 2 years now.</li>
 </ul>
 
 # Future Plans
@@ -31,6 +29,7 @@ This is a repo documenting and showcasing my new HomeLab journey. I started this
   <li>Learn how to utilize CICD pipeline to automate my deployment of Web services</li>
   <li>Implement a Sub and Pub model to push server notifiations as SMS to monitory server's performance</li>
   <li>Find a new replacement for my Proxy manager to a more enterprise grade to handle better SSL certs, authentication of my services, etc..</li>
+</ul>
 
 # Tools experience
 <ul>
