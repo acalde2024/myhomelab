@@ -4,6 +4,11 @@ This is a repo documenting and showcasing my new HomeLab journey. I started this
 
 # Documentation of HomeLab Server
 
+
+<img width="1558" height="855" alt="Image" src="https://github.com/user-attachments/assets/3862c248-9da3-4362-be64-1f0155d46988" />
+
+
+
 <ul>
   <li>Migrated my media server from OS install to Container using docker compose and successful on mapping current drives to container.</li>
   <li>Running AdGuard as my Network Wide add blocker and Malicious filtering to better protect home network.</li>
@@ -42,6 +47,3 @@ This is a repo documenting and showcasing my new HomeLab journey. I started this
   <li>Shift towards K8s and learn core concepts on how to deploy, provision and monitor it</li>
   <li>Understand CI/CD, Version Control and Automation</li>
 </ul>
-
-#Server Diagram
-<img width="1558" height="855" alt="Image" src="https://github.com/user-attachments/assets/3862c248-9da3-4362-be64-1f0155d46988" />
