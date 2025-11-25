@@ -42,3 +42,6 @@ This is a repo documenting and showcasing my new HomeLab journey. I started this
   <li>Shift towards K8s and learn core concepts on how to deploy, provision and monitor it</li>
   <li>Understand CI/CD, Version Control and Automation</li>
 </ul>
+
+#Server Diagram
+ <img src="server Diagram.png" alt="server" width="500" height="600"> 
