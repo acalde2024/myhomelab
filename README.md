@@ -4,7 +4,7 @@ This is a repo documenting and showcasing my new HomeLab journey. I started this
 
 # Documentation of HomeLab Server
 
-<img alt = "WordPress Diagram" src = "WordPress-Diagram.png" width="600px">
+<img alt = "Server Diagram" src = "Server Diagram.png" width="600px">
 
 
 
