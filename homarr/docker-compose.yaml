@@ -11,11 +11,9 @@ services:
       - SECRET_ENCRYPTION_KEY=${SECRET_ENCRYPTION_KEY}
     ports:
       - '7575:7575'
-    networks: 
-      - proxy
+    networks:
       - monitor
 
 networks:
-  proxy:
   monitor:
     external: true
