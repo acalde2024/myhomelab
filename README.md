@@ -25,9 +25,6 @@ I'm currently an IT support analyst working towards my career goal as mentioned 
 
 Here is a breakdown of how my server archicture is set up
 
-<img alt = "Server Diagram" src = "Server Diagram.png" width="600px">
-
-
 # What services I am running?
 
 I decided to approach a very minimal, simple approach, and rich feature to play with. As well to learn the basic on deploying, hosting, monitor and update. Here are the services I am running and what I gained from hosting it.
@@ -73,7 +70,17 @@ Now the tie all factor. A proxy manager. For a while I was going into my server'
 
 I wanted to deploy a service that acts as a homepage for my server. Like all in one site. I deployed Homarr. Here I can centralize everything from how many queries my PiHole blocked, to visualize my container services, to shortcuts to my services and RSS feeds just to keep up with latest tech news.
 
+# Secret Management
+
+Of course, I can't upload or commit my .env files here. So my question was, how can I manage my secret. I could use Hashicorp vault but it had it's limitation due to paid wall and again I wanted something simple and feature rich, so I found a service called Infisical Vault. It does still have a paid version but the free version provided me with more feature to store my vault and inject my secrets when I deploy my container via their CLI command.
+
 # How everything connects
 
 I created two seperate docker network. One for my monitoring applications and one for my frontend applications. I decided to design it like that to isolate them so they won't communicate with each other. The way my monitoring network like Uptime Kuma, WUD and Portainer can reach to the front end is by the default Docker Web Socket path. I have Uptime Kuma tracking all my systems to make sure they are up and running. Now for services that are not critical I have a health check of every hour to reduce load but for critical services like my PiHole, Proxy Manager, etc..I have it checking every minute to make sure they are up and running. Subject to change to maybe 5  minutes now that I am getting a bit comfortable now.
 
+<img alt = "Server Diagram" src = "Server Diagram.png" width="600px">
+
+# What's Next?
+I want to build a better server hardware to host more for speed and storage. I have a plan on building a NAS server to configure RAIDs to start getting involved on building a resilient server. Start playing with Grafana + Promethus to learn enterprise level monitoring. Add a CI/CD pipeline to automate my server deployment like Ansible and Git workflow. 
+
+I am looking into Back up solution for those moments. We all been there and I already experienced it. The only backup solution I have is a hard drive that has all my docker compose files, media and secrets. 
