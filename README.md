@@ -20,7 +20,7 @@ I'm currently an IT support analyst working towards my career goal as mentioned 
     <dd>- Ubuntu Server</dd>
     <dd>- Docker Engine</dd>
 
-    <dt>Dell Optiplex 3040 Micro</dt>
+  <dt>Dell Optiplex 3040 Micro</dt>
     <dd>- 250GB SSD/dd>
     <dd>- 8GB RAM</dd>
     <dd>- Ubuntu Server</dd>
